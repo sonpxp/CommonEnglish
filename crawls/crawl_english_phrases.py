@@ -1,5 +1,6 @@
 import json
 import re
+import time
 
 import requests
 from bs4 import BeautifulSoup
@@ -25,7 +26,6 @@ class ElementsScraper:
         english_phrases = []
 
         for data in datas:
-            # print(data)
             item_phrase = {}
             example = []
 
@@ -52,7 +52,7 @@ class ElementsScraper:
 
     @staticmethod
     def to_json(item):
-        with open('data_english_phrases.json', 'w', encoding='utf-8') as f:
+        with open('../database/data_english_phrases.json', 'w', encoding='utf-8') as f:
             json.dump(item, f, ensure_ascii=False, indent=4)
 
     def run(self):

@@ -27,9 +27,8 @@ for data in data_div:
         list_capitalize = list(map(lambda x: x.capitalize(), list_data))  # format chữ đầu viết hoa
         dict_convert = convert(list_capitalize)  # chuyển list[] -> dict{}
         dic.update(dict_convert)  # add dict
-        # print(dic)
 
 # print(dic)
 
-with open('data_dict.json', 'w', encoding='utf-8') as f:
+with open('../database/data_phrasal_verbs.json', 'w', encoding='utf-8') as f:
     json.dump(dic, f, ensure_ascii=False, indent=4)

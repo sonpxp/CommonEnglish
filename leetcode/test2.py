@@ -9,7 +9,7 @@
 #
 # s = 'xin chao tat ca moi nguoi'
 # print(s.capitalize())
-# "Xin chao cac ban Ha Noi. Xin chao"
+# When the dict is empty, the item will be added to the dict
 
 import re
 
